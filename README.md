@@ -1,8 +1,43 @@
+# react-test
 
-![Course](/demo/course.png)
+## Unit test
 
-# Habit Tracker
+```bash
+$ npm install @types/jest --save-dev
+```
 
-이 프로젝트는 [드림코딩 아카데미](http://academy.dream-coding.com/)에서 진행중인 [리액트 기본강의 & 실전 프로젝트 3개](https://academy.dream-coding.com/courses/react-basic) (유튜브 클론 코딩과 실시간 데이터베이스 저장 명함 만들기 웹앱을 통해 프론트엔드 완성)강의에서 **리액트 개념 정리를 위해 쓰인 예제 프로그램** 입니다.
+- Make a presenter.js and separate logic from components
+- Write test code and test with jest
 
-![Habit Tracker](/demo/habit.png)
+## Component test
+
+```bash
+$ npm install react-test-renderer --save-dev
+```
+
+- Snapshot test
+  ```js
+  it('renders', () => {
+    const component = renderer.create(<HabitAddForm onAdd={jest.fn()} />);
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+  ```
+- Component test
+
+  ```js
+  beforeEach(() => {
+    onAdd = jest.fn();
+    render(<HabitAddForm onAdd={onAdd} />);
+    input = screen.getByPlaceholderText('Habit');
+    button = screen.getByText('Add');
+  });
+
+  it('calls onAdd when button is clicked and valid habit is entered', () => {
+    userEvent.type(input, 'New Habit');
+    userEvent.click(button);
+
+    expect(onAdd).toHaveBeenCalledWith('New Habit');
+  });
+  ```
+
+## E2E(End to End) test
