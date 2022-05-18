@@ -1,5 +1,10 @@
 # react-test
 
+```bash
+$ npm run test
+$ npm run test -- --coverage
+```
+
 ## Unit test
 
 ```bash
