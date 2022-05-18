@@ -16,10 +16,13 @@ $ npm install @types/jest --save-dev
 ### Snapshot test
 
 - [https://jestjs.io/docs/snapshot-testing](https://jestjs.io/docs/snapshot-testing)
+
   ```bash
   $ npm install react-test-renderer --save-dev
   ```
+
 - `rerender.create([컴포넌트]).toJSON()`
+
   ```js
   it('renders', () => {
     const component = renderer.create(<HabitAddForm onAdd={jest.fn()} />);
