@@ -16,6 +16,7 @@ $ npm install @types/jest --save-dev
 ### Snapshot test
 
 - [https://jestjs.io/docs/snapshot-testing](https://jestjs.io/docs/snapshot-testing)
+- react-test-rerender(react 버전과 맞추기)
 
   ```bash
   $ npm install react-test-renderer --save-dev
@@ -38,7 +39,7 @@ $ npm install @types/jest --save-dev
   $ npm install @testing-library/react @testing-library/user-event --save-dev
   ```
 
-- `render([컴포넌트]), screen, userEvent`
+- `render([컴포넌트]), screen.getBy___(), userEvent`
 
   ```js
   beforeEach(() => {
@@ -55,6 +56,10 @@ $ npm install @types/jest --save-dev
     expect(onAdd).toHaveBeenCalledWith('New Habit');
   });
   ```
+
+### Custom hooks test
+
+- [https://github.com/testing-library/react-hooks-testing-library](https://github.com/testing-library/react-hooks-testing-library)
 
   <br>
 
