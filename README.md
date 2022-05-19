@@ -69,3 +69,9 @@ $ npm install @types/jest --save-dev
   <br>
 
 ## E2E(End to End) test
+
+- [https://www.cypress.io/](https://www.cypress.io/)
+
+  ```bash
+  $ npm install cypress
+  ```

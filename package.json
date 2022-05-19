@@ -7,16 +7,15 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^27.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^5.0.1",
-    "react-test-renderer": "^16.8.4"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll",
+    "cypress": "cypress open",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -33,5 +32,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "react-test-renderer": "^16.8.4",
+    "cypress": "^9.6.1"
   }
 }
