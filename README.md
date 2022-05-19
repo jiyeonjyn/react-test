@@ -73,5 +73,9 @@ $ npm install @types/jest --save-dev
 - [https://www.cypress.io/](https://www.cypress.io/)
 
   ```bash
-  $ npm install cypress
+  $ npm install cypress @testing-library/cypress --save-dev
   ```
+
+- `cy.findBy___(), should('...'), each(), wrap()`
+- class나 id가 아닌 text나 placeholderText 등 사용자가 화면을 바라볼 때 얻을 수 있는 정보를 이용
+- 사용자가 얻을 수 있는 정보가 없는 경우 title, data-testid 이용
