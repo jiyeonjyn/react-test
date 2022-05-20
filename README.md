@@ -5,7 +5,7 @@ $ npm run test
 $ npm run test -- --coverage
 ```
 
-## ✅ Unit test
+## 🧩 Unit test
 
 ```bash
 $ npm install @types/jest --save-dev
@@ -16,7 +16,7 @@ $ npm install @types/jest --save-dev
 
 <br>
 
-## ✅ Component test
+## 🧩 Component test
 
 ### Snapshot test
 
@@ -68,7 +68,7 @@ $ npm install @types/jest --save-dev
 
   <br>
 
-## ✅ E2E(End to End) test
+## 🧩 E2E(End to End) test
 
 - [https://www.cypress.io/](https://www.cypress.io/)
 
@@ -115,7 +115,7 @@ $ npm install @types/jest --save-dev
 
 <br>
 
-## Visual test
+## 🧩 Visual test
 
 - 컴포넌트가 상황마다 어떻게 보여져야 하는지 문서화
 
